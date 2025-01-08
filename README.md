@@ -1,7 +1,3 @@
-README: Household Energy Usage Analysis with PCA and Clustering
-
-Project Title
-
 Household Energy Consumption Analysis: Understanding Patterns with PCA and Clustering
 
 Objective
