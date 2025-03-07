@@ -19,16 +19,20 @@ The raw dataset contained missing values and inconsistent formatting. We handled
 Filling missing values with mean values of the respective columns.
 Converting date and time columns into a single datetime feature for time-based analysis.
 Aggregating data into daily totals to make patterns more interpretable.
-2. Dimensionality Reduction with PCA
+
+3. Dimensionality Reduction with PCA
+
 What is PCA?
 PCA (Principal Component Analysis) is a technique used to reduce the number of features while retaining the most important information. It simplifies the dataset by transforming the original variables into a set of new variables (principal components) that explain most of the variance in the data.
+
 Why PCA?
 Energy consumption data has multiple features that may be correlated. PCA helps:
 Identify patterns and relationships between features.
 Reduce the complexity of the data while preserving its essential structure.
 Key Outcome:
 We reduced the dataset to two principal components, which captured most of the variability in the data and provided a 2D space for visualization and clustering.
-3. Clustering with K-Means
+
+4. Clustering with K-Means
 What is K-Means?
 K-Means is a clustering algorithm that groups data into clusters based on similarity. It assigns each data point to the nearest cluster centroid.
 Why Clustering?
@@ -38,7 +42,8 @@ Low-energy users: Could serve as models for efficient usage.
 Medium-energy users: Represent a balanced profile.
 Visualization:
 Clusters were visualized in the PCA-reduced 2D space, showing distinct groupings of households.
-4. Time-Series Analysis by Cluster
+
+5. Time-Series Analysis by Cluster
 Aggregated daily energy usage was analyzed for each cluster to identify trends and seasonal patterns. This helped uncover:
 Differences in consumption across clusters.
 Peaks and valleys in usage during specific times of the year.
