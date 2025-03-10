@@ -1,7 +1,5 @@
 # Household Energy Consumption Analysis: PCA & Clustering
 
-![Clusters in PCA Space](images/clusters_pca.png) *Example: Clusters visualized in PCA-reduced space*
-
 ## 📌 Overview
 This project analyzes household energy consumption patterns using **Principal Component Analysis (PCA)** and **K-Means Clustering**. The goal is to uncover hidden trends in energy usage, segment households into behavior-based groups, and provide actionable insights for energy efficiency.
 
