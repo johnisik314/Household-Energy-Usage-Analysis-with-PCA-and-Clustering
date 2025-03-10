@@ -47,7 +47,6 @@ This project analyzes household energy consumption patterns using **Principal Co
 - **Cost Drivers**: Cluster 1 contributes ~60% to energy bills during peak hours.
 - **Efficiency Baseline**: Cluster 2 provides a benchmark for low-usage periods.
 
-![Hourly Consumption by Cluster](images/hourly_patterns.png)  
 *Hourly energy patterns across clusters*
 
 ---
