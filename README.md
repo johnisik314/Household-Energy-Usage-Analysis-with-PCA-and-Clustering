@@ -21,14 +21,15 @@ This project analyzes household energy consumption patterns using **Principal Co
 - **Objective**: Reduce 8+ features to 3 principal components while retaining **91% variance**.
 - **Key Components**:
   - **PC1 (66.8% variance)**: Dominated by HVAC (`Sub_metering_3`) usage.
-  - **PC2 (18.9% variance)**: Linked to kitchen/laundry appliances.
-  - **PC3 (5.4% variance)**: Captured nuanced patterns.
+  - **PC2 (18.9% variance)**: Captured nuanced patterns.
+  - **PC3 (5.4% variance)**: Linked to kitchen/laundry appliances.
 
 ### 3. Clustering (K-Means)
 - **Identified 3 Clusters**:
   - **Cluster 0**: High HVAC usage, low kitchen/laundry activity.
   - **Cluster 1**: Peak multi-appliance usage (evenings/weekends).
   - **Cluster 2**: Low activity (nighttime/unoccupied hours).
+
 - **Visualization**: Clusters mapped to PCA space and time-series trends.
 
 ---
@@ -39,13 +40,14 @@ This project analyzes household energy consumption patterns using **Principal Co
 | Cluster | Name                   | Key Features                                  | Energy Profile              |
 |---------|------------------------|----------------------------------------------|-----------------------------|
 | 0       | HVAC-Dominated         | High `Sub_metering_3`, moderate global power | Extreme weather usage       |
-| 1       | Peak Multi-Appliance   | High kitchen/laundry, peak global power      | Evening/weekend activity    |
-| 2       | Low Activity           | Low across all sub-meters                    | Nighttime/unoccupied hours  |
+| 1       | Low Activity           | Low across all sub-meters                    | Nighttime/unoccupied hours  |
+| 2       | Peak Multi-Appliance   | High kitchen/laundry, peak global power      | Evening/weekend activity    |
+
 
 ### Key Findings
 - **Seasonal Peaks**: Cluster 0 spikes in winter (heating) and summer (AC).
-- **Cost Drivers**: Cluster 1 contributes ~60% to energy bills during peak hours.
-- **Efficiency Baseline**: Cluster 2 provides a benchmark for low-usage periods.
+- **Cost Drivers**: Cluster 2 contributes ~60% to energy bills during peak hours.
+- **Efficiency Baseline**: Cluster 1 provides a benchmark for low-usage periods.
 
 *Hourly energy patterns across clusters*
 
